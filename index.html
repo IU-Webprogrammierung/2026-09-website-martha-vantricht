@@ -5,43 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>~rootworx Portfolio Website</title>
 </head>
-<body>
-    <p>rootworx</p>
-     <a href="#about">Über mich</a>
-     <a href="#works">Arbeiten</a>
-     <a href="#foto">Fotos</a>
-     <a href="#contact">Kontakt</a>
+<body id="top">
+    <header>
+        <p>rootworx</p>
 
- <br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
-    <h4>PORTFOLIO</h4>  
-    <h1>~rootworx</h1>
-    <p>Hier kommt kurzer Text, daneben ein Bild, darunter Button zu:</p>
-     <img src="..." alt="Bildbeschreibung">
-    <br />
-    <a href="#works">Meine Arbeiten</a>
+        <nav aria-label="Hauptnavigation">
+            <ul>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#works">Meine Arbeiten</a></li>
+                <li><a href="#foto">Fotografien</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
 
-<br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
-    <h2>01.Über mich</h2>
-    <p>Infos über mich....</p>
+        </nav>
+    </header>
 
-<br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
+    <main>
+        <section id="hero" aria-labelledby="hero-heading">
+            <p>PORTFOLIO</p>        <!-- richtiges Styling mit CSS -->
+            <h1>Willkommen auf ~rootworx</h1>
+            <p>Hier findest du meine Arbeiten, Fotografien und mehr.</p>
+             <img src="assets/images/hero.jpg" alt="Bildbeschreibung">
+        <br />  <!--  Styling mit CSS und br wieder entfernen! -->
+             <a href="#works">Meine Arbeiten</a>
+        </section>
 
-    <h2>02.Arbeiten</h2>
-    <p>Infos über meine Arbeiten, Grafiken etc.....</p>
+        <section id="about">
+            <h2>01.Über mich</h2>
+            <p>Infos über mich....</p>
+        </section>
 
-<br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
+        <section id="works">
+            <h2>02.Arbeiten</h2>
+            <p>Infos über meine Arbeiten, Grafiken etc.....</p>
+        </section>
 
-    <h2>03.Fotografien</h2>
-    <p>Best of Fotos werden hier vorgestellt...</p>
+        <section id="foto">
+            <h2>03.Fotografien</h2>
+            <p>Best of Fotos werden hier vorgestellt...</p>
+        </section>
 
-<br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
+        <section id="contact">
+            <h2>04.Kontakt</h2>
+            <p>Du hast ein Anliegen oder einfach nur eine Frage? Schreib mir gerne, worum es geht — ich melde mich....</p>
+        </section>
 
-    <h2>04.Kontakt</h2>
-    <p>Du hast ein Anliegen oder einfach nur eine Frage? Schreib mir kurz, worum es geht — ich melde mich....</p>
+    </main>
 
-<br /> <br />  <!-- aktueller Trenner, später wieder rausnehmen wenn CSS Abstände definiert -->
-
-<h4>(hier kommt der Footer)</h4>
+    <footer>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        
+        <p>&copy; 2026 ~rootworx.</p>
+        <a href="#top">Back to top</a>    
+    </footer>
 
 </body>
 </html>
