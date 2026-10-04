@@ -11,7 +11,16 @@ body {
     
 }
 
+header .brand {        /* nur vorübergehend, in Phase 2 offiziell bereinigt */ 
+    font-family: 'Impact', Impact, monospace;
+    font-size: 35pt;
+   
+}
 
+#works img, #about img, #foto img {       /* nur vorübergehend, da sonst aktuell zu große Bilder, in Phase 2 offiziell bereinigt */  
+    width: 450px;
+    height: auto;
+}
 
 
 .site-footer {
