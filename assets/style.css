@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif, Helvetica;
 }
 
-.site-header {
+header {
     border-bottom: 2px solid #efe7eb;
     background-color: #fff;
     padding: 20px;
@@ -22,7 +22,7 @@ header .brand {        /* nur vorübergehend, in Phase 2 offiziell bereinigt */
 }
 
 
-.site-footer {
+footer {
     background-color: #4C5454; 
     padding: 20px;
     border-top: 1px solid #000;
