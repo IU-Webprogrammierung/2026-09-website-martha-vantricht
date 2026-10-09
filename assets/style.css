@@ -39,6 +39,15 @@ header .brand {
 
 }
 
+
+main {
+    margin: 0 auto;
+    background-color: var(--color-white);
+}
+
+
+
+
 #works img,
 #about img,
 #foto img {
