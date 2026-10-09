@@ -1,29 +1,86 @@
-body {  
+:root {
+    --color-dark: #4C5454;
+    --color-cream: #EFE7EB;
+    --color-turquoise: #549BA0;
+    --color-coral: #FF6663;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*  Styling von Body u. Allgemeines  */
+
+body {
     background-color: #ffffff;
     font-family: Arial, sans-serif, Helvetica;
 }
+
+
+/*  Styling des Grundgerüsts  */
 
 header {
     border-bottom: 2px solid #efe7eb;
     background-color: #fff;
     padding: 20px;
-    
+
 }
 
-header .brand {        /* nur vorübergehend, in Phase 2 offiziell bereinigt */ 
+header .brand {
+    /* nur vorübergehend, in Phase 2 offiziell bereinigt */
     font-family: 'Impact', Impact, monospace;
     font-size: 35pt;
-   
+
 }
 
-#works img, #about img, #foto img {       /* nur vorübergehend, da sonst aktuell zu große Bilder, in Phase 2 offiziell bereinigt */  
+#works img,
+#about img,
+#foto img {
+    /* nur vorübergehend, da sonst aktuell zu große Bilder, in Phase 2 offiziell bereinigt */
     width: 450px;
     height: auto;
 }
 
 
 footer {
-    background-color: #4C5454; 
+    background-color: var(--color-dark);
     padding: 20px;
     border-top: 1px solid #000;
+
+    p {
+        color: var(--color-cream);
+        font-size: 10pt;
+        margin-top: 50px;
+        margin-left: 10px;
+
+    }
+
+    ul,
+    li {
+        list-style-type: none;
+        display: inline-block;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-white);
+        font-size: 11pt;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--color-black);
+        background-color: var(--color-cream);
+        font-size: 11pt;
+    }
+
 }
+
+
+/*  Styling der Sektionen  */
