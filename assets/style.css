@@ -143,14 +143,14 @@ footer {
         margin-bottom: 20px;
     }
 
-    #hero-heading {
-        font-size: 20pt;
+    h1 {
+        font-size: 35pt;
         color: var(--color-turquoise);
         margin-bottom: 10px;
     }
 
     .hero-content {
-        justify-content: center;
+       padding-right: 20px;
     }
 
     img {
