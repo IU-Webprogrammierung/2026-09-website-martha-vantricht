@@ -128,3 +128,48 @@ footer {
 
 
 /*  Styling der Sektionen  */
+
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    background-color: var(--color-white);
+    padding: 30px;
+
+
+    .hero-title {
+        font-size: 10pt;
+        color: var(--color-dark);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    #hero-heading {
+        font-size: 20pt;
+        color: var(--color-turquoise);
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        justify-content: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: var(--color-turquoise);
+        color: var(--color-white);
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+    }
+}
