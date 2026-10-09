@@ -23,9 +23,12 @@ body {
 /*  Styling des Grundgerüsts  */
 
 header {
+    display: flex;     /* Ordnet nebeneinander an */
+    align-items: center;    /* Zentriert die Elemente vertikal */
+    justify-content: space-between;    /* Verteilt Logo links und Navigation rechts */
+    padding: 1rem 2rem;
     border-bottom: 2px solid #efe7eb;
     background-color: #fff;
-    padding: 20px;
 
 }
 
@@ -81,6 +84,38 @@ footer {
     }
 
 }
+
+#header-nav {      /*  ID "header-nav" eingeführt, da sonst von Footer-Navi die Eigeschaften überschrieben werden */
+    padding: 10px;
+    display: flex;
+    gap: 1.5rem;      /* Abstand zwischen den Links */
+
+
+    ul,
+    li {
+        list-style-type: none;
+        display: inline-block;
+        text-transform: uppercase;
+        padding-left: 15px;
+        margin-top: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-dark);
+        font-size: 11pt;
+
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: var(--color-white);
+        background-color: var(--color-turquoise);
+        font-size: 11pt;
+    }
+
+}
+
 
 
 /*  Styling der Sektionen  */
