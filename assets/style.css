@@ -1,24 +1,39 @@
 :root {
     --color-dark: #4C5454;
-    --color-cream: #f0eeeb;  /* oder: urspr. #EFE7EB */
+    --color-cream: #f0eeeb;  
     --color-turquoise: #549BA0;
     --color-coral: #FF6663;
     --color-white: #FFFFFF;
     --color-black: #000000;
+    --color-grey: #c1c1c1;
+    --color-offwhite: #EFE7EB;
 
+    /*--font-header:  ;
+    --font-text: ;
+    --font-herobrow: ;
+    --font-display: ;
 }
 
 * {
     box-sizing: border-box;
 }
 
+/*  Festlegung von Fonts  */
+
+
+
 /*  Styling von Body u. Allgemeines  */
 
 body {
-    background-color: #ffffff;
+    background-color: var(--color-grey);  /* noch nicht endgültig, nach HERO prüfen! */
     font-family: Arial, sans-serif, Helvetica;
 }
 
+
+#top {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /*  Styling des Grundgerüsts  */
 
@@ -27,8 +42,8 @@ header {
     align-items: center;    /* Zentriert die Elemente vertikal */
     justify-content: space-between;    /* Verteilt Logo links und Navigation rechts */
     padding: 1rem 2rem;
-    border-bottom: 2px solid #efe7eb;
-    background-color: #fff;
+    border-bottom: 2px solid var(--color-offwhite);
+    background-color: var(--color-white);
 
 }
 
