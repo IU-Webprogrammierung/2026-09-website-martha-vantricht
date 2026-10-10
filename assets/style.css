@@ -61,21 +61,10 @@ main {
 }
 
 
-
-
-#works img,
-#about img,
-#foto img {
-    /* nur vorübergehend, da sonst aktuell zu große Bilder, in Phase 2 offiziell bereinigt */
-    width: 450px;
-    height: auto;
-}
-
-
 footer {
     background-color: var(--color-dark);
     padding: 20px;
-    border-top: 1px solid #000;
+    border-top: 4px solid var(--color-cream);;
 
     p {
         color: var(--color-cream);
@@ -95,16 +84,18 @@ footer {
 
     a {
         text-decoration: none;
+        text-transform: uppercase;
         color: var(--color-white);
         font-size: 11pt;
+        padding: 14px 8px;
+        border-radius: 5%;
 
     }
 
     a:hover {
-        text-decoration: underline;
-        color: var(--color-black);
-        background-color: var(--color-cream);
-        font-size: 11pt;
+        color: var(--color-offwhite);
+        border-bottom: solid 5px var(--color-turquoise);
+        background-color: var(--color-dark);
     }
 
 }
@@ -120,7 +111,7 @@ footer {
         list-style-type: none;
         display: inline-block;
         text-transform: uppercase;
-        padding-left: 15px;
+        padding-left: 5px;
         margin-top: 5px;
     }
 
@@ -128,6 +119,8 @@ footer {
         text-decoration: none;
         color: var(--color-dark);
         font-size: 11pt;
+        padding: 14px 8px;
+        border-radius: 5%;
 
     }
 
