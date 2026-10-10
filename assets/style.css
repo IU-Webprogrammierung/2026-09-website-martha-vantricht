@@ -343,3 +343,33 @@ footer {
 
 }
 
+#contact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding: 20px 20px 40px 20px;
+
+    h2 {
+        grid-area: 1 / 1 / 2 / 4;
+        margin-bottom: 10px;
+    }
+
+    #contact-info {
+        /*Grid-Area links*/
+        grid-area: 2 / 1 / 4 / 2;
+        line-height: 1.5;
+
+    }
+
+    #contact-container {
+        /*Grid-Area rechts*/
+        grid-area: 2 / 2 / 3 / 4;
+        line-height: 1.5;
+
+    }
+}
+
+
+
