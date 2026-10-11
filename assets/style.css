@@ -138,8 +138,15 @@ footer {
 /*  Styling der Sektionen  */
 
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    /*display: grid;
+    grid-template-columns: 1fr 1.3fr; */
+
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/images/designhero.webp");
+    background-size: cover;
+    background-position: center center;
     background-color: var(--color-white);
     padding: 30px;
 
@@ -148,17 +155,26 @@ footer {
         font-size: 10pt;
         color: var(--color-dark);
         text-transform: uppercase;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+    }
+
+    .hero-highlight {
+        color: var(--color-turquoise);
     }
 
     h1 {
         font-size: 35pt;
-        color: var(--color-turquoise);
-        margin-bottom: 10px;
+        color: var(--color-dark);
     }
 
     .hero-content {
-       padding-right: 20px;
+        width: 40%;
+        padding-left: 3rem;
+    }
+
+    p { 
+        line-height: 1.5;
+        margin: 25px 0;
     }
 
     img {
@@ -168,8 +184,6 @@ footer {
 
 
     a {
-        display: inline-block;
-        margin-top: 20px;
         padding: 10px 20px;
         background-color: var(--color-turquoise);
         color: var(--color-white);
