@@ -1,6 +1,6 @@
 :root {
     --color-dark: #4C5454;
-    --color-cream: #f0eeeb;  
+    --color-cream: #f0eeeb;
     --color-turquoise: #549BA0;
     --color-coral: #FF6663;
     --color-white: #FFFFFF;
@@ -8,25 +8,48 @@
     --color-grey: #c1c1c1;
     --color-offwhite: #EFE7EB;
 
-    /* --font-header:  ;
-    --font-text: ;
-    --font-herobrow: ;
-    --font-display: ;  */
+    --font-heading: "Playfair Display", serif;
+    --font-text: "Inter", sans-serif;
+    --font-display: "Bebas Neue", sans-serif;     /* aktuell nicht verwendet, ggf. Deko für später*/
+    --font-logo: "Playfair Display-Bold", serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/*  Festlegung von Fonts  */
+/*  Import und Festlegung von Fonts  */
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+}
 
+@font-face {
+    font-family: "Playfair Display-Bold";
+    src: url("../assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("../assets/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype");
+}
 
 
 /*  Styling von Body u. Allgemeines  */
 
 body {
-    background-color: var(--color-grey);  /* noch nicht endgültig, nach HERO prüfen! */
-    font-family: Arial, sans-serif, Helvetica;
+    background-color: var(--color-grey);
+    /* noch nicht endgültig, nach HERO prüfen! */
+    font-family: var(--font-text);
 }
 
 
@@ -38,9 +61,12 @@ body {
 /*  Styling des Grundgerüsts  */
 
 header {
-    display: flex;     /* Ordnet nebeneinander an */
-    align-items: center;    /* Zentriert die Elemente vertikal */
-    justify-content: space-between;    /* Verteilt Logo links und Navigation rechts */
+    display: flex;
+    /* Ordnet nebeneinander an */
+    align-items: center;
+    /* Zentriert die Elemente vertikal */
+    justify-content: space-between;
+    /* Verteilt Logo links und Navigation rechts */
     padding: 1rem 2rem;
     border-bottom: 2px solid var(--color-offwhite);
     background-color: var(--color-white);
@@ -48,8 +74,9 @@ header {
 }
 
 header .brand {
-    /* nur vorübergehend, in Phase 2 offiziell bereinigt */
-    font-family: 'Impact', Impact, monospace;
+    font-family: var(--font-logo);
+    color: var(--color-dark);
+    font-weight: bold;
     font-size: 35pt;
     padding-left: 2rem;
 
@@ -59,6 +86,21 @@ header .brand {
 main {
     margin: 0 auto;
     background-color: var(--color-white);
+
+    h1,
+    h2 {
+        font-family: var(--font-heading);
+        color: var(--color-dark);
+        text-transform: none;
+
+    }
+
+    .sektionnr {
+        font-family: var(--font-text);
+        color: var(--color-coral);
+        font-size: 0.7em;
+        margin-right: 0.5em;
+    }
 }
 
 
@@ -101,7 +143,8 @@ footer {
 
 }
 
-#header-nav {      /*  ID "header-nav" eingeführt, da sonst von Footer-Navi die Eigeschaften überschrieben werden */
+#header-nav {
+    /*  ID "header-nav" eingeführt, da sonst von Footer-Navi die Eigeschaften überschrieben werden */
     padding: 10px;
     display: flex;
     gap: 1.5rem;      /* Abstand zwischen den Links */
@@ -164,7 +207,7 @@ footer {
     }
 
     h1 {
-        font-size: 35pt;
+        font-size: 38pt;
         color: var(--color-dark);
     }
 
@@ -173,7 +216,7 @@ footer {
         padding-left: 3rem;
     }
 
-    p { 
+    p {
         line-height: 1.5;
         margin: 25px 0;
     }
@@ -317,13 +360,14 @@ footer {
     gap: 20px;
     background-color: var(--color-cream);
     padding: 3rem;
-   
+
 
     h2 {
         margin-bottom: 10px;
     }
 
-    article, p {
+    article,
+    p {
         line-height: 1.5;
     }
 
@@ -358,7 +402,8 @@ footer {
     gap: 25px;
     padding: 3rem;
 
-    h2, .contact-intro {
+    h2,
+    .contact-intro {
         grid-column: 1 / -1;
     }
 
@@ -372,7 +417,8 @@ footer {
         padding: 30px;
 
 
-        ul, li {
+        ul,
+        li {
             list-style: none;
 
         }
@@ -395,6 +441,3 @@ footer {
         font-size: 0.7rem;
     }
 }
-
-
-
