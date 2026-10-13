@@ -444,14 +444,20 @@ footer {
         color: var(--color-white);
         line-height: 1.5;
         padding: 30px;
+        align-items: center;
 
 
         ul,
         li {
             list-style: none;
+            display: flex;
+            margin-left: auto;
 
         }
 
+        a {
+            font-size: 10pt;
+        }
 
     }
 
