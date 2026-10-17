@@ -4,34 +4,44 @@
 @media (max-width: 1024px) {
 
   /* Allgemeine Abstände */
-    #about,
-    #works,
-    #foto,
-    #contact {
+    #about, #works, #foto, #contact {
         padding: 2rem;
     }
 
     /* Header */
     header {
         padding: 1rem 1.25rem;
-    }
+    
 
-    header .brand {
-        font-size: 2.1rem;
-        padding-left: 0;
-    }
+        .brand {
+            font-size: 2.1rem;
+            padding-left: 0;
+        }
 
-    #header-nav {
-        padding: 0;
-        gap: 0.5rem;
-    }
+        #header-nav {
+            padding: 0;
+            gap: 0.5rem;
+        }
 
-    #header-nav a {
-        padding: 0.7rem 0.4rem;
-        font-size: 0.85rem;
-    }
+        #header-nav a {
+            padding: 0.7rem 0.4rem;
+            font-size: 0.85rem;
+        }
+}    
 
+/* Hero */
+    #hero  {
+        min-height: 20vh;
+        background-size: cover;
+     
+        .hero-content {
+           width: 42%;
+            padding-left: 1.5rem;
+        }
 
+    }   
+
+    
 
 }
 
