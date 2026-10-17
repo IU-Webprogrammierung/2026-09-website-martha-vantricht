@@ -41,8 +41,23 @@
 
     }   
 
+    /* Über mich */
+    #about {
+        column-gap: 2.5rem;
+        grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
     
+        img {
+            max-width: 85% !important;
+            margin-left: 1rem;
+        }
 
+        ul {
+            padding: 0;
+        }
+    }
+
+
+    
 }
 
 
