@@ -1,22 +1,39 @@
-    /* Tablet-Anpassungen */
+/* ====  RESPONSIVE DESIGN  ===== */
+
+/* Tablet-Anpassungen */
 @media (max-width: 1024px) {
 
+  /* Allgemeine Abstände */
+    #about,
+    #works,
+    #foto,
+    #contact {
+        padding: 2rem;
+    }
 
+    /* Header */
+    header {
+        padding: 1rem 1.25rem;
+    }
 
+    header .brand {
+        font-size: 2.1rem;
+        padding-left: 0;
+    }
 
+    #header-nav {
+        padding: 0;
+        gap: 0.5rem;
+    }
 
-
-
-
-
-
+    #header-nav a {
+        padding: 0.7rem 0.4rem;
+        font-size: 0.85rem;
+    }
 
 
 
 }
-
-
-
 
 
     /* Smartphone-Anpassungen */
