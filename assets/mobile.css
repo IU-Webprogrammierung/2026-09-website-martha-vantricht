@@ -101,6 +101,24 @@
         }
     }    
 
+/* Über mich: untereinander */
+    #about {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     
+        h2, article, figure {
+            grid-area: auto;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        img {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+
 
 }
