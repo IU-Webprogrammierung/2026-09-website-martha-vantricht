@@ -22,9 +22,17 @@
     /* Smartphone-Anpassungen */
 @media (max-width: 767px) {
 
+:root {
+    --font-h1: clamp(2rem, 3.5vw, 2.8rem);
+    --font-h2: clamp(1.5rem, 2.5vw, 2rem);
+    --font-h3: clamp(1.15rem, 1.8vw, 1.4rem);
+    --font-body: clamp(0.9rem, 1vw, 1rem);
+}
+
  /* Allgemeine Abstände */
     #about, #works, #foto, #contact {
         padding: 1.25rem;
+        font-size: var(--font-body);
     }
 
     /* Header: vorläufig mehrzeilig */
@@ -78,10 +86,11 @@
         .hero-content {
             width: 80%;
             padding-left: 0;
+            font-size: var(--font-body);
         }
 
         h1 {
-            font-size: clamp(2rem, 8vw, 2.5rem);
+            --font-h1: clamp(2rem, 3.5vw, 2.8rem);
             margin-top: 0;
         }
 
@@ -105,9 +114,15 @@
     #about {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    
+
+ 
         h2, article, figure {
             grid-area: auto;
+            font-size: var(--font-h2);
+        }
+
+        article, article p {
+            font-size: var(--font-body);
         }
 
         figure {
@@ -133,25 +148,50 @@
     /* Kontakt: Bereiche untereinander */
     #contact {
         grid-template-columns: 1fr;
+        line-height: 1.5;
     
 
-     .contact-info,
-     .contact-container {
-        grid-column: 1;
-        min-width: 0;
+        .contact-info,
+        .contact-container {
+            grid-column: 1;
+            min-width: 0;
         }
 
-    .contact-form input,
-     .contact-form textarea {
-        width: 100%;
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
         }
 
-     .contact-form button {
-        width: auto;
-        max-width: 100%;
+        .contact-form button {
+            width: auto;
+            max-width: 100%;
         }
     }  
     
+    footer, footer p {
+        padding: 15px 5px;
+        font-size: 8pt;
 
+        a {
+            font-size: 10pt;
+        }
+
+        .back-to-top {
+            margin-left: auto;
+            padding-right: 15px;
+        
+            a {
+                width: 36px;         /* Breite des Buttons */
+                height: 36px;        /* Höhe des Buttons */
+            }
+
+            svg {
+                fill: var(--color-white);       /* Farbe des Pfeils */
+                width: 18px;         /* Größe des Pfeils  */
+                height: 18px;
+            }
+
+        }
+    }
 
 }
