@@ -33,9 +33,9 @@
         gap: 1rem;
         padding: 1rem;
 
-     .brand {
-        font-size: 1.9rem;
-        padding-left: 0;
+        .brand {
+            font-size: 1.9rem;
+            padding-left: 0;
         }
     }
 
@@ -119,6 +119,39 @@
             margin: 0 auto;
         }
     }
+
+ /* Arbeiten: eine Spalte */
+    #works .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Fotografien: eine Spalte */
+    #foto .foto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Kontakt: Bereiche untereinander */
+    #contact {
+        grid-template-columns: 1fr;
+    
+
+     .contact-info,
+     .contact-container {
+        grid-column: 1;
+        min-width: 0;
+        }
+
+    .contact-form input,
+     .contact-form textarea {
+        width: 100%;
+        }
+
+     .contact-form button {
+        width: auto;
+        max-width: 100%;
+        }
+    }  
+    
 
 
 }
