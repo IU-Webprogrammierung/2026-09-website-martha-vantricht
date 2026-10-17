@@ -18,6 +18,10 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*  Import und Festlegung von Fonts  */
 @font-face {
     font-family: "Playfair Display";
@@ -236,7 +240,7 @@ footer {
     }
 
     h1 {
-        font-size: 38pt;
+        font-size: clamp(2rem, 4vw, 3.2rem);
         color: var(--color-dark);
     }
 
