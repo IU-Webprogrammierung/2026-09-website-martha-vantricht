@@ -510,3 +510,43 @@ footer {
         font-size: 0.7rem;
     }
 }
+
+
+/* Styling für Unterseiten  */
+
+.all-content {
+    display: block;
+    background-color: var(--color-cream);
+    padding: 4rem;
+    justify-items: center;
+
+    
+    h1 {
+        font-family: var(--font-heading);
+        font-size: 2.5em;
+        color: var(--color-dark);
+        margin: 0;
+    }
+
+    p {
+        line-height: 1.5;
+        padding: 0.5em;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--color-white);
+        background-color: var(--color-turquoise);
+        padding: 16px 10px;
+        border-radius: 5px;
+    }
+
+    a:hover {
+        color: var(--color-white);
+        background-color: var(--color-coral);
+    }
+}
