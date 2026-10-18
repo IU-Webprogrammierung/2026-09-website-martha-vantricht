@@ -69,6 +69,29 @@
     }
 
 
+    
+    footer, footer p {
+        padding: 20px 10px;
+        font-size: 9pt;
+        margin-top: 0;
+
+        .back-to-top {
+            margin-left: auto;
+            padding-right: 30px;
+        
+            a {
+                width: 40px;         /* Breite des Buttons */
+                height: 40px;        /* Höhe des Buttons */
+            }
+
+            svg {
+                fill: var(--color-white);       /* Farbe des Pfeils */
+                width: 20px;         /* Größe des Pfeils  */
+                height: 20px;
+            }
+        }
+    }
+
 }
 
 
