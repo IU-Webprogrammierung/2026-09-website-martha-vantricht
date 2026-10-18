@@ -556,3 +556,24 @@ footer {
         background-color: var(--color-coral);
     }
 }
+
+
+/* Styling für Responsive Toggle-Menu */
+
+/* Toggle-Button: auf Desktop ausblenden */
+.menu-toggle {
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Die drei Striche im Hamburger Menu */
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--color-dark);
+    border-radius: 2px;
+}
