@@ -5,7 +5,7 @@
 
   /* Allgemeine Abstände */
     #about, #works, #foto, #contact {
-        padding: 2rem;
+        padding: 2.5rem;
     }
 
     /* Header */
@@ -27,7 +27,7 @@
             padding: 0.7rem 0.4rem;
             font-size: 0.85rem;
         }
-}    
+    }    
 
 /* Hero */
     #hero  {
@@ -56,8 +56,19 @@
         }
     }
 
+ /* Arbeiten: drei auf zwei Spalten */
+    #works .work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
 
-    
+    /* Fotografien: vier auf zwei Spalten */
+    #foto .foto-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+
 }
 
 
