@@ -518,19 +518,25 @@ footer {
     display: block;
     background-color: var(--color-cream);
     padding: 4rem;
-    justify-items: center;
+    
 
     
     h1 {
         font-family: var(--font-heading);
         font-size: 2.5em;
         color: var(--color-dark);
-        margin: 0;
     }
 
-    p {
+    h3 {
+        color: var(--color-turquoise);
+        padding-left: 0.6rem;
+    }
+
+
+    p, address {
         line-height: 1.5;
         padding: 0.5em;
+        justify-content: left;
     }
 
     figure {
