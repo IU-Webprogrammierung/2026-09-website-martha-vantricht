@@ -68,8 +68,17 @@
         gap: 1.5rem;
     }
 
+    /* Kontakt */
+    #contact {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+        gap: 1.5rem;
 
-    
+        p, ul, li, label {
+            font-size: 10pt;
+            padding-left: 0;
+        }
+    }
+
     footer, footer p {
         padding: 20px 10px;
         font-size: 9pt;
