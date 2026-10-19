@@ -198,14 +198,12 @@ footer {
         font-size: 11pt;
         padding: 14px 8px;
         border-radius: 5%;
-
     }
 
     a:hover {
         text-decoration: none;
         color: var(--color-white);
         background-color: var(--color-turquoise);
-        font-size: 11pt;
     }
 
 }
