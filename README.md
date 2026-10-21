@@ -27,12 +27,13 @@ Die Bereiche werden semantisch mit HTML5-Elementen wie `<header>`, `<nav>`, `<ma
 - `datenschutz.html` – Datenschutzerklärung
 - `404.html` – 404-Fehlerseite
 - `assets/` – Enthält sämtliche relevante Dateien in jeweiligen Unterordnern 
-- `assets/favicon/` - 
+- `assets/favicon/` - Enthält die Favicons in mehreren Größen und Dateiarten für versch. Geräte/Betriebssysteme
 - `assets/fonts/` - Enthält  Schriftarten, welche für die Webseite lokal eingebunden werden
 - `assets/images/` - Enthält die zur Gestaltung der Seite erforderlichen Bilder
 - `assets/fotos/` - Bilder zum Bereich "Fotografie"
 - `assets/works/` - Bilder zum Bereich "Arbeiten"
-- `assets/style.css` - Stylesheet
+- `assets/style.css` - Reguläres Stylesheet
+- `assets/mobile.css` - Stylesheet für Responsives Layout (Tablet und Smartphone)
 
 
 ## Eingesetzte Technologien
@@ -42,14 +43,14 @@ Die Bereiche werden semantisch mit HTML5-Elementen wie `<header>`, `<nav>`, `<ma
 - Flexbox für eindimensionale Anordnungen, z. B. Header und Navigation, Hero-Bereich
 - CSS Grid für zweidimensionale Layouts, z. B. Bereich der Arbeiten und Fotografien sowie Kontaktbereich
 - Keine grundlegende Grid-Struktur im body; jeder Bereich erhält sein eigenes, passendes Layout
-- JavaScript
+- JavaScript - für Webkomponenten sowie Toggle-Menu für Responsives Layout
 
 
 ##  Barrierefreiheit
 
 - Verwendung semantischer HTML5-Elemente
 - Kennzeichnung der Navigationen mit "arial-Label"
-- Kennzeichnung verwendeter Bilder mit alt-Tag und passender Beschreibung 
+- Kennzeichnung eingebundener Bilder mit alt-Tag und passender Beschreibung 
 - Felder im Kontaktformular mit `<label>` ausgezeichnet
 
 
@@ -60,24 +61,23 @@ Folgende Funktionen sind in jeweiliger Projektphase geplant bzw. integriert:
 | Funktion       |      Kurzbeschreibung       |  Phase    |
 |----------------|-----------------------------|-----------|
 | Back-to-top     |  Einbau eines Buttons im Footer, um direkt zum Seitenanfang zu springen.        | Phase 1-2   |
-| Responsive Webseite | Die Webseite passt sich an den Viewport an (Desktop, Tablet und Smartphone)      | Phase 2   |
+| Responsive Webseite | Die Webseite passt sich an den verfügbaren Viewport an (Desktop, Tablet und Smartphone)      | Phase 2   |
 | Responsive Navigation | Bei kleinerem Viewport, vor allem Smartphone erscheint ein Hamburger-Menü      | Phase 2-3   |
 | Web-Components | Einsatz von JavaScript, um Header u. Footer als Komponente in Unterseiten einzubinden     | Phase 2-3   |
 | Smooth Scrolling | Angenehmes Scroll-Verhalten der Seite      | Phase 2-3   |
 | Sticky Navigation | Navigation bleibt oben fixiert, um einfach zu den Bereichen zu springen      | Phase 2   |
-| Scroll-Animation | Integration einfacher Scroll-Effekte    | Phase 3   |
+| Scroll-Animation | Integration einfacher Effekte während Scrollen, um Seite interaktiver zu gestalten    | Phase 3   |
 | Favicon | Die Webseite erhält ein eigenes, passendes Favicon in verschiedenen Größen bzw. für unterschiedliche Geräte     | Phase 2-3   |
 | Bild-Animationen | Beim Hover oder Klick auf Projekte/Fotos erscheint eine Animation      | Phase 2-3   |
 
 
-<!--  noch fertig schreiben
-
 
 ## Testing
 
-xxxx
+- Test der Funktionalität der Seite mittels "Entwicklertools" in unterschiedlichen Browsern (Chrome, Firefox und Edge)
+- Test des responsiven Verhaltens über "Entwicklertools" 
+- Einsatz der Lighthouse-Funktion (über Entwicklertools im Browser) - Ergebnis bei Accessibility: 91/100   Best Practices 92/100
 
--->
 
 
 ## Git-Commits / Projektphasen
