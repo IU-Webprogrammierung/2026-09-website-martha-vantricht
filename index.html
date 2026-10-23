@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/mobile.css">
 
     <script src="script/loader.js" defer></script>
-    <script src="script/navi.js" defer></script>
+    <script src="script/lightbox.js" defer></script>
 </head>
 
 <body id="top">
@@ -171,22 +171,49 @@
         
             <div class="foto-grid">
                 <figure>
-                    <img src="assets/fotos/foto1.webp" alt="Nahaufnahme von Strohblumen">
+                    <a href="assets/fotos/foto1.webp" data-lightbox><img src="assets/fotos/foto1.webp" alt="Nahaufnahme von Strohblumen"></a>
                 </figure>
         
                 <figure>
-                    <img src="assets/fotos/foto2.webp" alt="Nahaufnahme eines gemischten Salats">
+                    <a href="assets/fotos/foto2.webp" data-lightbox><img src="assets/fotos/foto2.webp" alt="Nahaufnahme eines gemischten Salats"></a>
                 </figure>
         
                 <figure>
-                    <img src="assets/fotos/foto3.webp" alt="Spiegelung des Sonnenuntergangs im Weinglas">
+                    <a href="assets/fotos/foto3.webp" data-lightbox><img src="assets/fotos/foto3.webp" alt="Spiegelung des Sonnenuntergangs im Weinglas"></a>
                 </figure>
         
                 <figure>
-                    <img src="assets/fotos/foto4.webp" alt="Fotografie von Margeriten bei Sonnenuntergang">
+                    <a href="assets/fotos/foto4.webp" data-lightbox><img src="assets/fotos/foto4.webp" alt="Fotografie von Margeriten bei Sonnenuntergang"></a>
+                </figure>
+                
+                <figure>
+                    <a href="assets/fotos/foto5.webp" data-lightbox><img src="assets/fotos/foto5.webp" alt="Glockenblumen bei Sonnenuntergang mit Halo"></a>
+                </figure>
+                
+                <figure>
+                    <a href="assets/fotos/foto6.webp" data-lightbox><img src="assets/fotos/foto6.webp" alt="Bunte Blumenwiese in den Bergen bei leicht bewölktem Wetter"></a>
                 </figure>
             </div>
         </section>
+
+            <dialog class="lightbox" aria-label="Bildansicht">
+                <button class="lightbox-close" type="button" aria-label="Bildansicht schließen">
+                    &times;
+                </button>
+            
+                <button class="lightbox-prev" type="button" aria-label="Vorheriges Bild">
+                    &#10094;
+                </button>
+            
+                <img class="lightbox-image" src="" alt="">
+            
+                <button class="lightbox-next" type="button" aria-label="Nächstes Bild">
+                    &#10095;
+                </button>
+            
+                <p class="lightbox-counter" aria-live="polite"></p>
+            </dialog>
+
 
         <section id="contact">
             <h2><span class="sektionnr">04.</span>Kontakt</h2>

@@ -241,6 +241,14 @@
         grid-template-columns: 1fr;
     }
 
+    .lightbox {
+        padding: 3.5rem 2.5rem 2rem;
+    }
+
+    .lightbox-image {
+        max-height: calc(100dvh - 7rem);
+    }
+
     /* Kontakt: Bereiche untereinander */
     #contact {
         grid-template-columns: 1fr;
