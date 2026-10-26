@@ -1,7 +1,6 @@
 
-const galleryLinks = [...document.querySelectorAll(
-    '#foto .foto-grid a[data-lightbox]'
-)];
+/* NEU: Die Bildgruppe wird erst beim Anklicken festgelegt. */
+let galleryLinks = [];
 
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = lightbox.querySelector('.lightbox-image');
@@ -18,18 +17,30 @@ function showImage(index) {
 
     const link = galleryLinks[currentIndex];
     const thumbnail = link.querySelector('img');
+    const figure = link.closest('figure');
+    const image = thumbnail || figure?.querySelector('img');
 
     lightboxImage.src = link.href;
-    lightboxImage.alt = thumbnail.alt;
+    lightboxImage.alt = image?.alt || '';
+    counter.textContent = `${currentIndex + 1} / ${galleryLinks.length}`;
     counter.textContent = `${currentIndex + 1} / ${galleryLinks.length}`;
 }
 
-galleryLinks.forEach((link, index) => {
+/* NEU: Nur Bilder derselben Gruppe werden durchgeschaltet. */
+document.querySelectorAll('a[data-lightbox]').forEach(link => {
     link.addEventListener('click', event => {
         event.preventDefault();
 
+        const galleryName = link.dataset.lightbox;
+
+        galleryLinks = [
+            ...document.querySelectorAll(
+                `a[data-lightbox="${galleryName}"]`
+            )
+        ];
+
         lastFocusedElement = link;
-        showImage(index);
+        showImage(galleryLinks.indexOf(link));
         lightbox.showModal();
         closeButton.focus();
     });
