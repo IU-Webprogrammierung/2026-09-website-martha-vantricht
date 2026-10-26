@@ -52,7 +52,6 @@ img {
 
 body {
     background-color: var(--color-grey);
-    /* noch nicht endgültig, nach HERO prüfen! */
     font-family: var(--font-text);
 }
 
@@ -83,7 +82,6 @@ header .brand {
     font-weight: bold;
     font-size: 35pt;
     padding-left: 2rem;
-
 }
 
 
@@ -97,7 +95,6 @@ main {
         font-family: var(--font-heading);
         color: var(--color-dark);
         text-transform: none;
-
     }
 
     .sektionnr {
@@ -168,7 +165,7 @@ footer {
         }
 
         a:hover {
-            background-color: var(--color-black);; /* Dunklerer Ton beim Hover */
+            background-color: var(--color-black); /* Dunklerer Ton beim Hover */
             transform: translateY(-3px); /* Button hüpft minimal nach oben */
         }
     }
@@ -202,11 +199,9 @@ footer {
     }
 
     a:hover {
-        text-decoration: none;
         color: var(--color-white);
         background-color: var(--color-turquoise);
     }
-
 }
 
 
@@ -214,9 +209,6 @@ footer {
 /*  Styling der Sektionen  */
 
 #hero {
-    /*display: grid;
-    grid-template-columns: 1fr 1.3fr; */
-
     min-height: 60vh;
     display: flex;
     align-items: center;
@@ -228,7 +220,7 @@ footer {
 
 
     .hero-title {
-        font-size: 10pt;
+        font-size: 0.8rem;
         color: var(--color-dark);
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -265,10 +257,12 @@ footer {
         color: var(--color-white);
         text-decoration: none;
         border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     a:hover {
         background-color: var(--color-coral);
+        
     }
 }
 
@@ -287,7 +281,6 @@ footer {
 
     article {
         grid-area: 2 / 1 / 3 / 2;
-
     }
 
 
@@ -311,7 +304,6 @@ footer {
         padding: 5px 10px;
         border-radius: 5px;
         margin: 5px;
-
     }
 
     figure {
@@ -325,7 +317,6 @@ footer {
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
-
     }
 
 }
@@ -493,6 +484,8 @@ footer {
 
     }
 }
+
+  /*    Einbau der Lightbox für vergrößerte Bilder  */
     .lightbox {
         position: fixed;
         border: 0;
@@ -504,7 +497,7 @@ footer {
         background: rgb(30 34 34 / 94%);
         color: #F8F6F0;
         overflow: hidden;
-}
+    }
 
     .lightbox[open] {
         display: flex;
