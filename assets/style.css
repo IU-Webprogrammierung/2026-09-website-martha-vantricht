@@ -61,6 +61,18 @@ body {
     margin: 0 auto;
 }
 
+    /* .snapcontainer {
+        scroll-behavior: smooth;
+        overflow-y: scroll;
+        height: 20vh;
+        scroll-snap-type: y mandatory;
+
+    }
+
+    section {
+        scroll-snap-align: end;
+    }  */
+
 /*  Styling des Grundgerüsts  */
 
 header {
@@ -215,6 +227,7 @@ footer {
     background-image: url("../assets/images/designhero.webp");
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
     background-color: var(--color-white);
     padding: 30px;
 
