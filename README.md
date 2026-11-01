@@ -73,18 +73,14 @@ Folgende Funktionen sind bereits integriert oder für spätere Projektphasen vor
 |----------------|-----------------------------|-----------|
 | Back-to-top     |  Einbau eines Buttons im Footer, um direkt zum Seitenanfang zu springen.        | Phase 1-2   |
 | Responsive Webseite | Die Webseite passt sich an den verfügbaren Viewport an (Desktop, Tablet und Smartphone)      | Phase 2   |
-| Responsive Navigation | Bei kleinerem Viewport, vor allem Smartphone erscheint ein Hamburger-Menü      | Phase 2-3   |
-| Web-Components | Einsatz von JavaScript, um Header u. Footer als Komponente in Unterseiten einzubinden     | Phase 2-3   |
-| Smooth Scrolling | Angenehmes Scroll-Verhalten der Seite      | Phase 2-3   |
+| Responsive Navigation | Bei kleinerem Viewport, vor allem Smartphone erscheint ein Hamburger-Menü      | Phase 2   |
+| Web-Components | Einsatz von JavaScript, um Header u. Footer als Komponente in Unterseiten einzubinden     | Phase 2   |
 | Sticky Navigation | Navigation bleibt oben fixiert, um einfach zu den Bereichen zu springen      | Phase 2   |
-| Scroll-Animation | Integration einfacher Effekte während Scrollen, um Seite interaktiver zu gestalten    | Phase 3   |
-| Favicon | Die Webseite erhält ein eigenes, passendes Favicon in verschiedenen Größen bzw. für unterschiedliche Geräte     | Phase 2-3   |
+| Lightbox | Zum Öffnen und Betrachten der vergrößteren Bilder aus "Arbeiten" und "Fotografie" | PHase 2 |
 | Bild-Animationen | Beim Hover oder Klick auf Projekte/Fotos erscheint eine Animation      | Phase 2-3   |
-
-Geplante Funktionalitäten
-
-- Dark-Mode: Der Nutzer kann manuell auf einen dunklen Modus umschalten; Steuerung über CSS-Klassen (Standard: Heller Modus)
-- Lightbox: Zum Öffnen und Betrachten der vergrößerten Bilder aus "Arbeiten" und "Fotografie" 
+| Scroll-Animation | Integration einfacher Effekte während Scrollen, um Seite interaktiver zu gestalten    | Phase 3   |
+| Smooth Scrolling | Angenehmes Scroll-Verhalten der Seite      | Phase 3   |
+| Favicon | Die Webseite erhält ein eigenes, passendes Favicon in verschiedenen Größen bzw. für unterschiedliche Geräte     | Phase 3   |
 
 
 
