@@ -10,17 +10,17 @@
 
     /* Header */
     header {
-        padding: 1rem 1.25rem;
+        padding: 0.8rem;
     
 
         .brand {
-            font-size: 2.1rem;
-            padding-left: 0;
+            font-size: 2rem;
+            padding-left: 0.5rem;
         }
 
         #header-nav {
             padding: 0;
-            gap: 0.5rem;
+            gap: 0.7rem;
         }
 
         #header-nav a {
@@ -35,7 +35,7 @@
      
         .hero-content {
            width: 42%;
-            padding-left: 1.5rem;
+            padding-left: 1.3rem;
         }
 
     }   
@@ -122,10 +122,10 @@
     header {
         flex-wrap: wrap;
         gap: 1rem;
-        padding: 1rem;
+        padding: 0.9rem;
 
         .brand {
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             padding-left: 0;
         }
     }

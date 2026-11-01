@@ -76,13 +76,13 @@ body {
 /*  Styling des Grundgerüsts  */
 
 header {
-    display: flex;
-    /* Ordnet nebeneinander an */
-    align-items: center;
-    /* Zentriert die Elemente vertikal */
-    justify-content: space-between;
-    /* Verteilt Logo links und Navigation rechts */
-    padding: 1rem 2rem;
+    position: sticky;
+    top: 0 !important;      /* Offset, otherwise it won't stick! */   
+    z-index: 1000;          /* Damit Header über allen anderen Elementen liegt */
+    display: flex;          /* Ordnet nebeneinander an */
+    align-items: center;    /* Zentriert die Elemente vertikal */
+    justify-content: space-between;         /* Verteilt Logo links und Navigation rechts */
+    padding: 1rem;
     border-bottom: 2px solid var(--color-offwhite);
     background-color: var(--color-white);
 
@@ -92,7 +92,7 @@ header .brand {
     font-family: var(--font-logo);
     color: var(--color-dark);
     font-weight: bold;
-    font-size: 35pt;
+    font-size: 2.7rem;
     padding-left: 2rem;
 }
 
@@ -186,8 +186,7 @@ footer {
 
 
 
-#header-nav {
-    /*  ID "header-nav" eingeführt, da sonst von Footer-Navi die Eigeschaften überschrieben werden */
+#header-nav {           /*  ID "header-nav" eingeführt, da sonst von Footer-Navi die Eigeschaften überschrieben werden */
     padding: 10px;
     display: flex;
     gap: 1.5rem;      /* Abstand zwischen den Links */
