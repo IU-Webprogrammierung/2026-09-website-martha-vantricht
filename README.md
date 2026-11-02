@@ -29,12 +29,14 @@ Die Bereiche werden semantisch mit HTML5-Elementen wie `<header>`, `<nav>`, `<ma
 - `assets/` – Enthält sämtliche projektbezogenen  Dateien in den jeweiligen Unterordnern 
 - `assets/favicon/` - Enthält die Favicons in mehreren Größen und Dateiarten für versch. Geräte/Betriebssysteme
 - `assets/fonts/` - Enthält  lokal eingebundene Schriftarten
-- `assets/images/` - Enthält die zur Gestaltung der Seite erforderlichen Bilder
 - `assets/fotos/` - Bilder zum Bereich "Fotografie"
+- `assets/images/` - Enthält die zur Gestaltung der Seite erforderlichen Bilder
 - `assets/works/` - Bilder zum Bereich "Arbeiten"
 - `assets/style.css` - Reguläres Stylesheet
 - `assets/mobile.css` - Stylesheet für Responsives Layout (Tablet und Smartphone)
-
+- `components/` - Enthält die Komponenten `header.html` und `footer.html`, welche mittels JavaScript in die Webseite eingebunden werden
+- `script/lightbox.js` - Enthält den JavaScript-Code für die Funktion der Lightbox
+- `script/loader.js` - Enthäls den JavaScript-Code zur Einbindung der Komponenten sowie des responsiven Toogle-Menüs
 
 ## Eingesetzte Technologien
 
@@ -49,8 +51,8 @@ Die Bereiche werden semantisch mit HTML5-Elementen wie `<header>`, `<nav>`, `<ma
 
 ## Responsives Design
 
-- Smartphone: bis 767 px
-- Tablet: ab 768 px
+- Smartphone: bis 767 px mit einspaltigem Layout
+- Tablet: ab 768 px mit zweispaltigem Layout
 - Desktop: ab 1025 px
 
 
@@ -75,8 +77,8 @@ Folgende Funktionen sind bereits integriert oder für spätere Projektphasen vor
 | Responsive Webseite | Die Webseite passt sich an den verfügbaren Viewport an (Desktop, Tablet und Smartphone)      | Phase 2   |
 | Responsive Navigation | Bei kleinerem Viewport, vor allem Smartphone erscheint ein Hamburger-Menü      | Phase 2   |
 | Web-Components | Einsatz von JavaScript, um Header u. Footer als Komponente in Unterseiten einzubinden     | Phase 2   |
-| Sticky Navigation | Navigation bleibt oben fixiert, um einfach zu den Bereichen zu springen      | Phase 2   |
-| Lightbox | Zum Öffnen und Betrachten der vergrößteren Bilder aus "Arbeiten" und "Fotografie" | PHase 2 |
+| Sticky Header | Header inkl. Navigation bleiben oben fixiert, um einfacher zu den Bereichen zu navigieren      | Phase 2   |
+| Lightbox | Zum Öffnen und Betrachten der vergrößteren Bilder aus "Arbeiten" und "Fotografie" | Phase 2 |
 | Bild-Animationen | Beim Hover oder Klick auf Projekte/Fotos erscheint eine Animation      | Phase 2-3   |
 | Scroll-Animation | Integration einfacher Effekte während Scrollen, um Seite interaktiver zu gestalten    | Phase 3   |
 | Smooth Scrolling | Angenehmes Scroll-Verhalten der Seite      | Phase 3   |
@@ -87,7 +89,7 @@ Folgende Funktionen sind bereits integriert oder für spätere Projektphasen vor
 ## Testing
 
 - Test der Funktionalität der Seite mittels "Entwicklertools" in unterschiedlichen Browsern (Chrome, Firefox und Edge)
-- Test des responsiven Verhaltens mithilfe der "Entwicklertools" 
+- Test des responsiven Verhaltens mithilfe der "Entwicklertools" (Geräteemulation für Desktop, Tablet und Smartphones)
 - Einsatz der Lighthouse-Funktion (über Entwicklertools im Browser) mit folgendem Ergebnis:
   - Accessibility: 91/100
   - Best Practices: 92/100
