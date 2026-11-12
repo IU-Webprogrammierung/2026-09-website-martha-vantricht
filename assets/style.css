@@ -50,7 +50,9 @@ img {
 
 /*  Styling von Body u. Allgemeines  */
 
-body {
+html, body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
     background-color: var(--color-grey);
     font-family: var(--font-text);
 }
