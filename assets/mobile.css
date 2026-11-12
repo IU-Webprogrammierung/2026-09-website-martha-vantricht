@@ -172,17 +172,19 @@
     
     /* Hero-Sektion */
     #hero {
-        min-height: auto;
+        min-height: 30vh;
         padding: 1.25rem;
-        background-size: cover;
-        background-position: left;
+        background-size: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
         background-color: var(--color-white);
 
 
         .hero-content {
-            width: 80%;
+            max-width: 75%;
             padding-left: 0;
             font-size: var(--font-body);
+            text-wrap: balance;
         }
 
         h1 {
@@ -297,4 +299,25 @@
 
         }
     }
+}
+
+
+    /* Anpassungen kleinere Bildschirme unter 623px */
+@media (max-width: 622px) {
+
+    /* Hero-Sektion */
+    #hero {
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        
+        .hero-content {
+        width: 60%;
+        padding-left: 0.8rem;
+        text-wrap: balance;
+        }
+
+    }
+
 }
