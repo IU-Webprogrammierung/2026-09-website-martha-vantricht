@@ -16,6 +16,20 @@
     background-color: var(--color-cream);
     line-height: 1.5;
     padding: 3.8rem;
+
+    a {
+        padding: 10px 20px;
+        background-color: var(--color-turquoise);
+        color: var(--color-white);
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+    }
+
 }
 
 /* ==============================
@@ -44,19 +58,6 @@
         justify-self: center;
     }
 
-}
-
-a {
-    padding: 10px 20px;
-    background-color: var(--color-turquoise);
-    color: var(--color-white);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-a:hover {
-    background-color: var(--color-coral);
 }
 
 
