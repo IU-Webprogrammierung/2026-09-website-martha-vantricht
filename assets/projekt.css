@@ -1,0 +1,239 @@
+:root {
+    --color-dark: #4C5454;
+    --color-cream: #f0eeeb;
+    --color-offwhite: #EFE7EB;
+    --color-turquoise: #549BA0;
+    --color-coral: #FF6663;
+
+    --font-heading: "Playfair Display", serif;
+    --font-text: "Inter", sans-serif;
+
+}
+
+
+.projekt-content {
+    color: var(--color-dark);
+    background-color: var(--color-cream);
+    line-height: 1.5;
+    padding: 3.8rem;
+
+    a {
+        padding: 10px 20px;
+        background-color: var(--color-turquoise);
+        color: var(--color-white);
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+    }
+
+}
+
+/* ==============================
+   PROJEKT-HERO
+================================ */
+
+.project-hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 2.0rem;
+    min-height: 50vh;
+
+    div {
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 80%;
+        padding: 5px;
+        background-color: var(--color-offwhite);
+        border-radius: 10px;
+        border: 1px solid var(--color-grey);
+        justify-self: center;
+    }
+
+}
+
+
+
+/* ==============================
+   ABSTAND
+================================ */
+
+hr.custom-line {
+    border: none;
+    height: 2px;
+    background-color: #cccccc;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.abstand {
+    height: 2rem;
+    display: block;
+}
+
+
+/* ==============================
+   ÜBERSCHRIFTEN UND TEXT
+================================ */
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4.0rem);
+    color: var(--color-dark);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-weight: normal;
+    color: var(--color-dark);
+}
+
+h3 {
+    font-family: var(--font-text);
+    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-weight: bold;
+    color: var(--color-turquoise);
+}
+
+.eyebrow {
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+
+.projekt-sektionnr {
+    /* Größer als in style.css */
+    font-size: 1.0rem;
+    color: var(--color-coral);
+}
+
+
+
+/* ==============================
+   PROJEKTÜBERSICHT
+================================ */
+
+.project-details {
+    padding: 2.5rem;
+    /* #efede8 */
+}
+
+.project-description {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 80px;
+}
+
+.project-text {
+    max-width: 95%;
+}
+
+.project-meta table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.project-meta th,
+.project-meta td {
+    padding: 12px 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.project-meta th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.project-meta td {
+    text-align: right;
+}
+
+section {
+    padding: 2.0rem;
+}
+
+/* ==============================
+   PROJEKTERGEBNISSE
+================================ */
+
+.project-figure {
+    display: flex;
+    align-items: left;
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color-grey);
+    background-color: var(--color-offwhite);
+    padding: 10px;
+}
+
+
+/* ==============================
+   TABLET
+================================ */
+
+@media (max-width: 1024px) {
+
+    .project-hero {
+        gap: 35px;
+        padding: 70px 5%;
+    }
+
+    .project-description {
+        gap: 40px;
+    }
+
+}
+
+
+/* ==============================
+   SMARTPHONE
+================================ */
+
+@media (max-width: 767px) {
+
+    .project-hero,
+    .project-description {
+        grid-template-columns: 1fr;
+    }
+
+    .project-hero {
+        gap: 30px;
+        min-height: auto;
+        padding: 55px 6%;
+    }
+
+    .project-overview,
+    .project-process,
+    .project-results {
+        padding: 55px 6%;
+    }
+
+    .project-meta {
+        margin-top: 20px;
+    }
+
+    .project-navigation {
+        flex-direction: column;
+        padding: 25px 6%;
+    }
+
+    .project-conclusion {
+        padding: 55px 6%;
+    }
+
+}
