@@ -113,6 +113,10 @@
     --font-body: clamp(0.9rem, 1vw, 1rem);
 }
 
+html {
+    scroll-snap-type: none;
+}
+
  /* Allgemeine Abstände */
     #about, #works, #foto, #contact {
         padding: 1.25rem;
@@ -313,9 +317,9 @@
         background-attachment: scroll;
         
         .hero-content {
-        width: 60%;
-        padding-left: 0.8rem;
-        text-wrap: balance;
+            width: 60%;
+            padding-left: 0.8rem;
+            text-wrap: balance;
         }
 
     }
