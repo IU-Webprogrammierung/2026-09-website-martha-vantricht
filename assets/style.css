@@ -729,3 +729,13 @@ footer {
     background-color: var(--color-dark);
     border-radius: 2px;
 }
+
+
+/* Barrierefreiheit: Animationen und Scroll-Snap reduzieren */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        scroll-snap-type: none;
+    }
+}
