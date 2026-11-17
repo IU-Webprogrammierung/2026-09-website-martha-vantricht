@@ -53,6 +53,7 @@ img {
 html, body {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
+    scroll-snap-type: y proximity;
     background-color: var(--color-grey);
     font-family: var(--font-text);
 }
@@ -63,17 +64,11 @@ html, body {
     margin: 0 auto;
 }
 
-    /* .snapcontainer {
-        scroll-behavior: smooth;
-        overflow-y: scroll;
-        height: 20vh;
-        scroll-snap-type: y mandatory;
 
-    }
+#works, #foto {  /* Scroll-Snap nur bei großen Sections */
+    scroll-snap-align: start;
+}  
 
-    section {
-        scroll-snap-align: end;
-    }  */
 
 /*  Styling des Grundgerüsts  */
 
