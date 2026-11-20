@@ -25,10 +25,50 @@ async function loadComponent(selector, path) {
             initToggleMenu(element);
         }
 
+        // To-Top-Button erst nach dem Einfügen des Footers aktivieren
+        if (selector === 'footer') {
+            initToTop(element);
+        }
+
     } catch (error) {
         console.error(error);
     }
 }
+
+
+/* TO-TOP-BUTTON
+   Initialisiert den Zurück-nach-oben-Button erst,
+   nachdem der Footer dynamisch in die Seite eingefügt wurde.
+*/
+
+function initToTop(container) {
+
+    // Button innerhalb des geladenen Footers suchen
+    const toTop = container.querySelector(".back-to-top a");
+
+    if (!toTop) return;
+
+    // Sichtbarkeit abhängig von der Scrollposition steuern
+    function checkScroll() {
+        if (window.scrollY > 300) {
+            toTop.classList.add("visible");
+        } else {
+            toTop.classList.remove("visible");
+        }
+    }
+
+    // Auf Scroll-Bewegungen reagieren
+    window.addEventListener("scroll", checkScroll);
+
+    // Sichtbarkeit auch beim initialen Laden prüfen
+    checkScroll();
+}
+
+
+
+/* TOGGLE-MENÜ
+    Initialisiert das Toggle-Menü bei kleinen Displays. Das Menü wird nach Klick auf das Hamburger-Menü geöffnet und nach Auswahl eines Links wieder geschlossen.
+*/
 
 function initToggleMenu(header) {
     const menuToggle = header.querySelector('.menu-toggle');

@@ -164,17 +164,27 @@ footer {
     }
 
     .back-to-top {
-        margin-left: auto !important;   /* Schiebt dieses Element und alles danach nach rechts */
-    
+        position: fixed;
+        bottom: 15px;
+        right: 7px;
+        z-index: 1000;
+
         a {
             display: flex;
             align-items: center;
             justify-content: center;
+            opacity: 0;
+            visibility: hidden;
             width: 44px;         /* Breite des Buttons */
             height: 44px;        /* Höhe des Buttons */
             border-radius: 50%;  /* Macht den Button perfekt rund */
             background-color: var(--color-turquoise); 
             transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        a.visible {
+            opacity: 1;
+            visibility: visible;
         }
 
         svg {
