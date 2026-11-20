@@ -144,8 +144,10 @@ footer {
     li {
         display: flex;
         list-style-type: none;
-        padding-left: 15px;
+        padding-left: 20px;
         margin-top: 5px;
+        margin-left: 5px;
+
     }
 
     a {
@@ -154,7 +156,8 @@ footer {
         color: var(--color-white);
         font-size: 11pt;
         border-radius: 5px;
-
+        padding-bottom: 8px;
+        border-bottom: solid 5px transparent;
     }
 
     a:hover {
