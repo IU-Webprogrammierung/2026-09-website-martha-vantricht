@@ -1,9 +1,15 @@
 :root {
     --color-dark: #4C5454;
     --color-cream: #f0eeeb;
-    --color-offwhite: #EFE7EB;
     --color-turquoise: #549BA0;
     --color-coral: #FF6663;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grey: #c1c1c1;
+    --color-offwhite: #EFE7EB; 
+    --color-imgbg: #F8F6F0;
+    --color-accentblue: #7bb2b6; 
+    --color-lightgrey: #cccccc;
 
     --font-heading: "Playfair Display", serif;
     --font-text: "Inter", sans-serif;
@@ -69,7 +75,7 @@
 hr.custom-line {
     border: none;
     height: 2px;
-    background-color: #cccccc;
+    background-color: var(--color-lightgrey);
     margin: 20px auto;
     width: 60%;
 }
@@ -149,7 +155,7 @@ h3 {
 .project-meta th,
 .project-meta td {
     padding: 12px 5px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--color-lightgrey);
     font-size: 0.9rem;
 }
 
