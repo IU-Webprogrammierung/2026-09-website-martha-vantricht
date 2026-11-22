@@ -1,0 +1,20 @@
+/* Dunkles Theme - Farbwerte in :root bleiben gleich, Bezeichnungen in Klassen usw. ändern sich! */
+
+:root[data-theme="dark"] {       /* Allgemeine Farben überschreiben */
+    --color-dark: #4c5050;
+    --color-cream: #f0eeeb;
+    --color-turquoise: #69AEB0;
+    --color-coral: #FF7774;
+    --color-white: #FFFFFF;
+    --color-black: #111515;
+    --color-lightblack: #414141;
+    --color-grey: #858D8D;
+    --color-offwhite: #EFE7EB; 
+    --color-imgbg: #303636;
+    --color-accentblue: #83BFC2; 
+    --color-lightgrey: #596262;
+
+    /* Zusätzliche Stile für das dunkle Theme */
+
+}
+
