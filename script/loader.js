@@ -21,14 +21,10 @@ async function loadComponent(selector, path) {
         element.innerHTML = html;
 
         // Theme Toggle initialisieren, nachdem der Header geladen wurde
+        // Toggle-Menü erst nach dem Einfügen des Headers aktivieren
         if (selector === "header") {
             initToggleMenu(element);
             initThemeToggle();
-        }
-
-        // Toggle-Menü erst nach dem Einfügen des Headers aktivieren
-        if (selector === 'header') {
-            initToggleMenu(element);
         }
 
         // To-Top-Button erst nach dem Einfügen des Footers aktivieren
