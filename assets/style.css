@@ -212,6 +212,7 @@ footer {
     padding: 10px;
     display: flex;
     gap: 1.5rem;      /* Abstand zwischen den Links */
+    margin-left: auto;
 
 
     ul,
