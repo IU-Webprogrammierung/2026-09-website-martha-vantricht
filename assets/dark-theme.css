@@ -8,6 +8,7 @@
     --color-turquoise: #79B7B8;
     --color-coral: #FF8580;
     --color-white: #edeae6;
+    --color-realwhite: #ffffff;
     --color-black: #242929;
     --color-lightblack: #626969;
     --color-grey: #A5AAAA;
@@ -15,6 +16,7 @@
     --color-imgbg: #454B49;
     --color-accentblue: #91C5C7;
     --color-lightgrey: #737C7C;
+    --color-darkturquoise: #63a2a3;
 
 }
 
@@ -55,7 +57,7 @@ main {
     color: var(--color-offwhite);
 
     h1, h2 {
-        color: var(--color-turquoise);
+        color: var(--color-white);
     }
 
     .foto-grid figure {
@@ -135,9 +137,7 @@ main {
 
         a:hover {
             background-color: var(--color-black);
-            /* Dunklerer Ton beim Hover */
-            transform: translateY(-3px);
-            /* Button hüpft minimal nach oben */
+
 
             svg {
                 fill: var(--color-white);
@@ -146,6 +146,83 @@ main {
         }
 
     }
+}
+
+:root[data-theme="dark"] #hero {
+
+    .hero-highlight {
+        color: var(--color-darkturquoise);
+    }
+
+    a {
+        background-color: var(--color-darkturquoise);
+        color: var(--color-realwhite);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+        color: var(--color-cream);
+    }
+
+}
+
+:root[data-theme="dark"] #header-nav {
+
+    a {
+          color: var(--color-dark);
+    }
+
+    a:hover {
+        color: var(--color-realwhite);
+        background-color: var(--color-darkturquoise);
+    }
+} 
 
 
+:root[data-theme="dark"] #works {
+
+    h3 {
+        color: var(--color-darkturquoise);
+    }
+
+    a {
+        color: var(--color-realwhite);
+        background-color: var(--color-darkturquoise);
+    }
+
+    a:hover {
+        color: var(--color-realwhite);
+    }
+}
+
+:root[data-theme="dark"] .all-content {
+
+    h1 {
+        color: var(--color-white);
+    }
+
+    h2 {
+        color: var(--color-coral);
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        color: var(--color-turquoise);
+    }
+
+    address, p {
+        color: var(--color-white);
+    }
+
+    a {
+        background-color: var(--color-darkturquoise);
+        color: var(--color-realwhite);
+
+    }
+
+    a:hover {
+        color: var(--color-black);
+        background-color: var(--color-coral);
+    }
 }
