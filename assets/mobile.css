@@ -173,6 +173,11 @@ html {
         font-size: 0.9rem;
     }
 
+    #themeToggle {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+    
     
     /* Hero-Sektion */
     #hero {

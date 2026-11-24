@@ -1,0 +1,228 @@
+/* Dunkles Theme - Farbwerte in :root bleiben gleich, Bezeichnungen in Klassen usw. ändern sich! */
+
+:root[data-theme="dark"] {
+    /* Allgemeine Farben überschreiben */
+
+    --color-dark: #555D5D;
+    --color-cream: #343B3B;
+    --color-turquoise: #79B7B8;
+    --color-coral: #FF8580;
+    --color-white: #edeae6;
+    --color-realwhite: #ffffff;
+    --color-black: #242929;
+    --color-lightblack: #626969;
+    --color-grey: #A5AAAA;
+    --color-offwhite: #D9D4D5;
+    --color-imgbg: #454B49;
+    --color-accentblue: #91C5C7;
+    --color-lightgrey: #737C7C;
+    --color-darkturquoise: #63a2a3;
+
+}
+
+/* Zusätzliche Stile für das dunkle Theme */
+
+:root[data-theme="dark"] header {
+    border-bottom: 2px solid var(--color-grey);
+    background-color: var(--color-white);
+
+}
+
+main {
+    .sektionnr {
+        color: var(--color-coral);
+    }
+}
+
+
+:root[data-theme="dark"] #about {
+    color: var(--color-white);
+
+    h1, h2 {
+        color: var(--color-white);
+    }
+
+    p {
+        color: var(--color-offwhite);
+    }
+
+    li {
+        background-color: var(--color-turquoise);
+        color: var(--color-black);
+        border: 1px solid var(--color-offwhite);
+    }
+}
+
+:root[data-theme="dark"] #foto {
+    color: var(--color-offwhite);
+
+    h1, h2 {
+        color: var(--color-white);
+    }
+
+    .foto-grid figure {
+        border: 1px solid var(--color-imgbg);
+        background-color: var(--color-black);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    figure:hover {
+        background-color: var(--color-lightblack);
+    }
+
+}
+
+
+:root[data-theme="dark"] #contact {
+    color: var(--color-dark);
+
+    .contact-info {
+        background-color: var(--color-coral);
+        color: var(--color-black);
+    }
+
+    .contact-container {
+        color: var(--color-white);
+        background-color: var(--color-cream);
+    }
+
+    input,
+    textarea,
+    button {
+        border: 1px solid var(--color-lightgrey);
+        background-color: var(--color-grey);
+    }
+
+    button {
+        background-color: var(--color-offwhite);
+        color: var(--color-cream);
+    }
+
+    button[type="submit"]:hover {
+        background-color: var(--color-coral);
+        color: var(--color-black);
+    }
+
+}
+
+:root[data-theme="dark"] footer {
+    background-color: var(--color-black);
+    border-top: 4px solid var(--color-lightgrey);
+
+    p {
+        color: var(--color-offwhite);
+    }
+
+    a {
+        color: var(--color-offwhite);
+    }
+
+    li a:hover {
+        color: var(--color-white);
+        background: transparent;
+        border-bottom: solid 5px var(--color-coral);
+    }
+
+    .back-to-top {
+
+        a {
+            background-color: var(--color-white);
+
+
+            svg {
+                fill: var(--color-black);
+            }
+
+        }
+
+        a:hover {
+            background-color: var(--color-black);
+
+
+            svg {
+                fill: var(--color-white);
+            }
+
+        }
+
+    }
+}
+
+:root[data-theme="dark"] #hero {
+
+    .hero-highlight {
+        color: var(--color-darkturquoise);
+    }
+
+    a {
+        background-color: var(--color-darkturquoise);
+        color: var(--color-realwhite);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+        color: var(--color-cream);
+    }
+
+}
+
+:root[data-theme="dark"] #header-nav {
+
+    a {
+          color: var(--color-dark);
+    }
+
+    a:hover {
+        color: var(--color-realwhite);
+        background-color: var(--color-darkturquoise);
+    }
+} 
+
+
+:root[data-theme="dark"] #works {
+
+    h3 {
+        color: var(--color-darkturquoise);
+    }
+
+    a {
+        color: var(--color-realwhite);
+        background-color: var(--color-darkturquoise);
+    }
+
+    a:hover {
+        color: var(--color-realwhite);
+    }
+}
+
+:root[data-theme="dark"] .all-content {
+
+    h1 {
+        color: var(--color-white);
+    }
+
+    h2 {
+        color: var(--color-coral);
+        padding-bottom: 20px;
+    }
+
+    h3 {
+        color: var(--color-turquoise);
+    }
+
+    address, p {
+        color: var(--color-white);
+    }
+
+    a {
+        background-color: var(--color-darkturquoise);
+        color: var(--color-realwhite);
+
+    }
+
+    a:hover {
+        color: var(--color-black);
+        background-color: var(--color-coral);
+    }
+}
