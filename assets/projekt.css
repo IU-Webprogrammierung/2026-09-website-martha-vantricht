@@ -46,24 +46,28 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    gap: 1.6rem;
+    gap: 3.5rem;
     padding: 2.0rem;
-    min-height: 50vh;
+
 
     div {
         width: 100%;
     }
 
     img {
-        display: block;
         width: 80%;
         padding: 5px;
+        margin: 0 auto;
         background-color: var(--color-offwhite);
         border-radius: 10px;
         border: 1px solid var(--color-grey);
-        justify-self: center;
     }
 
+            li {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 5px;
+            }  
 }
 
 
@@ -179,7 +183,7 @@ section {
 .project-figure {
     display: flex;
     align-items: left;
-    width: 60%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
     border: 1px solid var(--color-grey);
@@ -194,14 +198,44 @@ section {
 
 @media (max-width: 1024px) {
 
+section {
+    padding: 1.2rem;
+    text-wrap: balance;
+}
+
+.eyebrow {
+    font-size: 0.7rem;
+}
+
+.projekt-content {
+    padding: 1.2rem;
+
+}
     .project-hero {
-        gap: 35px;
-        padding: 70px 5%;
+        padding: 0.8rem;
+        display: flex;
+
+             li {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 5px;
+        }  
     }
 
     .project-description {
-        gap: 40px;
+        gap: 0.5rem;
     }
+
+    .project-results img {
+        width: 100%;
+        height: auto;
+    }
+
+.project-figure {
+    align-items: center;
+    max-width: 80%;
+    height: auto;
+}
 
 }
 
@@ -212,21 +246,55 @@ section {
 
 @media (max-width: 767px) {
 
+section {
+    padding: 0.8rem;
+    text-wrap: balance;
+
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+.eyebrow {
+    font-size: 0.6rem;
+}
+
+.projekt-sektionnr {
+    font-size: 0.8rem;
+}
+
+.project-hero img {
+    max-width: 50%;
+    height: auto;
+}
+
+.projekt-content {
+    padding: 1.1rem;
+    display: grid;
+}
+
     .project-hero,
     .project-description {
+        display: grid;
         grid-template-columns: 1fr;
+        padding: 0.7rem;
     }
 
     .project-hero {
-        gap: 30px;
         min-height: auto;
-        padding: 55px 6%;
+        padding: 0.6rem;
+
+        li {
+            display: inline-flex;
+            list-style-type: none;
+            padding: 6px;
+        }       
     }
 
     .project-overview,
     .project-process,
     .project-results {
-        padding: 55px 6%;
+        padding: 1rem;
     }
 
     .project-meta {
@@ -235,11 +303,31 @@ section {
 
     .project-navigation {
         flex-direction: column;
-        padding: 25px 6%;
+        padding: 1rem;
     }
 
-    .project-conclusion {
-        padding: 55px 6%;
+    .project-results {
+        width: 100%;
+        height: auto;
     }
 
+.project-figure img {
+    width: 100%;
+    height: auto;
+
+}
+
+}
+
+@media (max-width: 359px) {
+
+.project-hero {
+    gap: 0;
+}
+
+    .project-hero img {
+        visibility: hidden;
+        margin: 0;
+
+    }
 }
