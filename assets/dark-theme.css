@@ -25,7 +25,6 @@
 :root[data-theme="dark"] header {
     border-bottom: 2px solid var(--color-grey);
     background-color: var(--color-white);
-
 }
 
 main {
@@ -128,7 +127,6 @@ main {
         a {
             background-color: var(--color-white);
 
-
             svg {
                 fill: var(--color-black);
             }
@@ -142,9 +140,7 @@ main {
             svg {
                 fill: var(--color-white);
             }
-
         }
-
     }
 }
 
@@ -164,8 +160,8 @@ main {
         background-color: var(--color-coral);
         color: var(--color-cream);
     }
-
 }
+
 
 :root[data-theme="dark"] #header-nav {
 
@@ -218,11 +214,47 @@ main {
     a {
         background-color: var(--color-darkturquoise);
         color: var(--color-realwhite);
-
     }
 
     a:hover {
         color: var(--color-black);
         background-color: var(--color-coral);
+    }
+}
+
+
+/* ==============================
+    STYLING PROJEKT-UNTERSEITE
+================================ */
+
+:root[data-theme="dark"] .projekt-content {
+
+    color: var(--color-white);
+    background-color: var(--color-cream);
+
+    a {
+        background-color: var(--color-darkturquoise);
+        color: var(--color-realwhite);
+    }
+
+    a:hover {
+        background-color: var(--color-coral);
+        color: var(--color-realwhite);
+    }
+
+    .project-hero {
+
+        h1 {
+            color: var(--color-accentblue);
+        }
+    }
+
+    h2 {
+        color: var(--color-realwhite);
+    }
+
+    img {
+        background-color: var(--color-realwhite);
+        border: 1px solid var(--color-grey);
     }
 }
