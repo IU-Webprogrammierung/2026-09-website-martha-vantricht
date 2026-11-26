@@ -778,4 +778,10 @@ footer {
         scroll-behavior: auto;
         scroll-snap-type: none;
     }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
 }
