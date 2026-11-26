@@ -56,7 +56,6 @@ img {
 html, body {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
-    scroll-snap-type: y proximity;
     background-color: var(--color-grey);
     font-family: var(--font-text);
 }
@@ -66,11 +65,6 @@ html, body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
-#works, #foto {  /* Scroll-Snap nur bei großen Sections */
-    scroll-snap-align: start;
-}  
 
 
 /*  Styling des Grundgerüsts  */
@@ -755,12 +749,32 @@ footer {
     border-radius: 2px;
 }
 
+/* Styling für Scroll-Reveal-Effekt */
+
+.reveal {    /* Grundzustand */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+.reveal.visible {    /* Element wird sichtbar */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 /* Barrierefreiheit: Animationen und Scroll-Snap reduzieren */
 
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
-        scroll-snap-type: none;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
     }
 }

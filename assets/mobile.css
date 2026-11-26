@@ -118,10 +118,6 @@
     --font-body: clamp(0.9rem, 1vw, 1rem);
 }
 
-html {
-    scroll-snap-type: none;
-}
-
 .all-content {
     padding: 1.4rem;
     font-size: 0.9rem;
