@@ -755,6 +755,21 @@ footer {
     border-radius: 2px;
 }
 
+/* Styling für Scroll-Reveal-Effekt */
+
+.reveal {    /* Grundzustand */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+.reveal.visible {    /* Element wird sichtbar */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 /* Barrierefreiheit: Animationen und Scroll-Snap reduzieren */
 
