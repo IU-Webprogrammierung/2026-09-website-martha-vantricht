@@ -275,9 +275,16 @@ footer {
     }
 
     .hero-content {
+        background-color: color-mix(in srgb, var(--color-cream) 80%, transparent);
+        border-radius: 14px;
+        padding: 40px;
         width: 40%;
         padding-left: 3rem;
     }
+
+
+
+
 
     p {
         line-height: 1.5;
