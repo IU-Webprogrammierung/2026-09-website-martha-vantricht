@@ -172,9 +172,9 @@ main {
 :root[data-theme="dark"] #hero {
     background-image: url("../assets/images/designhero-dark.webp");
     opacity: 0.95;
-    background-size: cover;
-    background-position: center center;
+    background-color: var(--color-black);
 
+    
     .hero-title {
         color: var(--color-offwhite);
     }
