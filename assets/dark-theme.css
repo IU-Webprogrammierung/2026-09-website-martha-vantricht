@@ -181,8 +181,6 @@ main {
     
     .hero-content {
         background-color: color-mix(in srgb, var(--color-black) 80%, transparent);
-        border-radius: 14px;
-        padding: 40px;
         text-wrap: balance;
 
 

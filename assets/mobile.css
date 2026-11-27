@@ -332,13 +332,13 @@
         background-position: right;
         background-repeat: no-repeat;
         background-attachment: scroll;
+        padding: 0.6rem;
         
         .hero-content {
-            background-color: color-mix(in srgb, var(--color-cream) 80%, transparent);
-            border-radius: 10px;
-            padding: 10px;
+            background-color: color-mix(in srgb, var(--color-cream) 75%, transparent);
+            border-radius: 5px;
+            padding: 5px;
             width: 65%;
-            padding-left: 0.7rem;
             font-size: var(--font-body);
             text-wrap: balance;
         }
