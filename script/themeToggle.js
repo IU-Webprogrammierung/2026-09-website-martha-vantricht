@@ -48,22 +48,31 @@ function switchTheme() {
 }
 
 
-// 3. Button an den aktuellen Theme-Zustand anpassen
+// 3. Button-Bild an den aktuellen Theme-Zustand anpassen
 
 function updateThemeButton(theme) {
 
     const themeButton = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
 
-    if (!themeButton) return;
+    if (!themeButton || !themeIcon) return;
 
     if (theme === "dark") {
-        themeButton.textContent = "☀️ Light Mode";
+
+        // Bild für Dark Mode laden
+        themeIcon.src = "assets/images/sun.svg";
+
         themeButton.setAttribute("aria-pressed", "true");
         themeButton.setAttribute("aria-label", "Helles Design aktivieren");
+
     } else {
-        themeButton.textContent = "🌙 Dark Mode";
+
+        // Bild für Light Mode laden
+        themeIcon.src = "assets/images/moon.svg";
+
         themeButton.setAttribute("aria-pressed", "false");
         themeButton.setAttribute("aria-label", "Dark Mode aktivieren");
+
     }
 
 }
@@ -94,3 +103,4 @@ function initThemeToggle() {
 // 5. Beim Laden der Seite das Theme festlegen
 
 setInitialTheme();
+document.addEventListener("DOMContentLoaded", initThemeToggle);
